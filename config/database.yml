@@ -1,0 +1,119 @@
+development:
+  adapter: postgis
+  database: sample_app_dev
+  pool: 5
+  timeout: 5000
+  schema_search_path: "public,postgis"
+  script_dir: "/usr/pgsql-9.2/share/contrib/postgis-2.0"
+  username: housing
+  password: housing
+  su_username: housing_su
+  su_password: housing
+
+# Warning: The database defined as "test" will be erased and
+# re-generated from your development database when you run "rake".
+# Do not set this db to the same as development or production.
+test:
+  adapter: postgis
+  database: sample_app_test
+  pool: 5
+  timeout: 5000
+  schema_search_path: "public,postgis"
+  script_dir: "/usr/pgsql-9.2/share/contrib/postgis-2.0"
+  username: housing
+  password: housing
+  su_username: housing_su
+  su_password: housing
+
+production:
+  adapter: postgis
+  database: sample_app_production
+  pool: 5
+  timeout: 5000
+  script_dir: "/usr/pgsql-9.2/share/contrib/postgis-2.0"
+  schema_search_path: "public,postgis"
+  username: housing
+  password: housing
+  su_username: housing_su
+  su_password: housing
+
+
+housing_pg_db:
+  adapter: postgis
+  database: housing_pg_production
+  pool: 5
+  timeout: 5000
+  schema_search_path: "public,postgis"
+  script_dir: "/usr/pgsql-9.2/share/contrib/postgis-2.0"
+  username: housing
+  password: housing
+  su_username: housing_su
+  su_password: housing
+
+housing_images_db:
+  adapter: postgis
+  database: housing_images_production
+  pool: 5
+  timeout: 5000
+  schema_search_path: "public,postgis"
+  script_dir: "/usr/pgsql-9.3/share/contrib/postgis-2.1"
+  username: housing
+  password: housing
+  su_username: housing_su
+  su_password: housing
+
+housing_np_db:
+  adapter: postgis
+  database: housing_np_production
+  pool: 5
+  timeout: 5000
+  script_dir: "/usr/pgsql-9.3/share/contrib/postgis-2.1"
+  schema_search_path: "public,postgis"
+  username: housing
+  password: housing
+  su_username: housing_su
+  su_password: housing
+
+
+housing_employee_login_db:
+  adapter: postgis
+  database: housing_login_production
+  # host: 10.1.6.XX
+  # port: 5432
+  pool: 5
+  timeout: 5000
+  schema_search_path: "public,postgis"
+  script_dir: "/usr/pgsql-9.2/share/contrib/postgis-2.0"
+  username: housing
+  password: housing
+  su_username: housing_su
+  su_password: housing
+
+
+locality_expert:
+  adapter: postgis
+  database: locality_expert_kb
+  host: akshayk.housing.com
+  port: 5432
+  pool: 5
+  timeout: 5000
+  schema_search_path: "public,postgis"
+  script_dir: "/usr/pgsql-9.2/share/contrib/postgis-2.0"
+  username: housing_su
+  password: housing
+  su_username: housing_su
+  su_password: housing
+
+regions:
+  adapter: postgis
+  database: housing_regions_production
+  host: staging.housing.com
+  port: 5432
+  pool: 5
+  timeout: 5000
+  schema_search_path: "public,postgis"
+  script_dir: "/usr/pgsql-9.2/share/contrib/postgis-2.0"
+  username: housing_su
+  password: housing
+  su_username: housing_su
+  su_password: housing
