@@ -20,7 +20,7 @@ test:
   timeout: 5000
   schema_search_path: "public,postgis"
   script_dir: "/usr/pgsql-9.2/share/contrib/postgis-2.0"
-  username: housing
+  username: housing_su
   password: housing
   su_username: housing_su
   su_password: housing
