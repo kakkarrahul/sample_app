@@ -8,6 +8,7 @@ gem 'bootstrap-sass', '3.2.0.0'
 # Use postgresql as the database for Active Record
 gem 'pg'
 gem 'activerecord-postgis-adapter'
+gem 'puma',           '2.11.1'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
